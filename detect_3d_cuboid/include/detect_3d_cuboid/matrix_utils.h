@@ -3,7 +3,10 @@
 // Eigen
 #include <Eigen/Core>
 #include <Eigen/Dense>
-
+#include <opencv2/opencv.hpp>
+#include <opencv2/imgproc/types_c.h>
+#include <opencv2/imgproc/imgproc_c.h>
+#include <numeric>
 template <class T>
 Eigen::Quaternion<T> zyx_euler_to_quat(const T &roll, const T &pitch, const T &yaw);
 
